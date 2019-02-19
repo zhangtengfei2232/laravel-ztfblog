@@ -60,7 +60,7 @@ class ImagesDatas extends Model
          {
              for($i=0;$i<count($imgroad);$i++){
                $time=date("Y-m-d H:i:s");
-              $addimage=DB::table('images')->insert(['ima_road'=>$imgroad[$i],'al_id'=>$albumid,'created_at'=>$time,'ima_sta'=>0]);
+               $addimage=DB::table('images')->insert(['ima_road'=>$imgroad[$i],'al_id'=>$albumid,'created_at'=>$time,'ima_sta'=>0]);
              }
              if($addimage){
                  return 1;

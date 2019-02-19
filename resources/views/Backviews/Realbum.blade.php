@@ -9,7 +9,7 @@
     img{
         display: inline;
     }
-</style>
+</style>dsdsasdasdasdasd
 <style>
     .aimages{
         float: right;

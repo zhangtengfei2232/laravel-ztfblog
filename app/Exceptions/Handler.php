@@ -44,9 +44,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-//        if(!isset($exception->validator)){
-//            return response()->view('Frontviews.Fourpage');
-//        }
+        if(!isset($exception->validator)){
+            return response()->view('Frontviews.Fourpage');
+        }
         return parent::render($request, $exception);
     }
 
